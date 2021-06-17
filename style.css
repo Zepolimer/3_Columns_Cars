@@ -8,15 +8,12 @@
     --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
 }
 
- /*
- font-family: 'Big Shoulders Display', cursive;
- font-family: 'Lexend Deca', sans-serif;
-*/
-
 *,
 *::before,
 *::after {
-    margin: border-box;
+    margin: 0;
+    padding: 0;
+    border: border-box;
 }
 
 body {
@@ -24,16 +21,15 @@ body {
 }
 
 .main-container {
-    width: 60vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: 15% auto;
 }
-
 
 /* containers */
 .yellow, .blue, .green {
-    width: 60vw;
+    width: 90%;
     margin: 0 auto;
-    height: 435px;
+    height: 100%;
 }
 .yellow {
     background-color: var(--bright-orange);
@@ -112,7 +108,7 @@ button:hover {
     text-decoration: none;
   }
 
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
     .main-container {
         width: 900px;
         display: grid;
